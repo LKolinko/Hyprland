@@ -3,7 +3,7 @@
     border-radius: 0;
     font-family: "JetBrainsMono Nerd Font";
     font-weight: bold;
-    font-size: 15px;
+    font-size: 14.2px;
     min-height: 0;
 }
 
@@ -14,38 +14,38 @@ window#waybar {
 
 tooltip {
     background: #000000;
-    border-radius: 5px;
-    border-width: 2px;
+    border-radius: 15px;
+    border-width: 2.5px;
     border-style: solid;
-    border-color: #11111b;
+    border-color: #8aadf4;
 }
 
 #workspaces button {
-    padding: 5px;
+    padding: 0px;
     color: #313244;
     margin-right: 5px;
 }
 
 #workspaces button.active {
-    color: #b3b1ad;
+    color: #f5a97f;
 }
 
 #workspaces button.focused {
     color: #a6adc8;
     background: #eba0ac;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 #workspaces button.urgent {
     color: #11111b;
     background: #a6e3a1;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 #workspaces button:hover {
     background: #11111b;
     color: #cdd6f4;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 #cava,
@@ -53,62 +53,81 @@ tooltip {
 #clock,
 #battery,
 #pulseaudio,
+#pulseaudio.microphone,
 #network,
 #bluetooth,
+#custom-notifications,
+#custom-updates,
 #workspaces,
 #tray,
 #memory,
 #disk,
+
 #backlight {
     background: #000000;
     opacity: 1.0;
     padding: 0px 10px;
-    margin: 0px 0px;
-    margin-top: 0px;
-    border: 1px solid #181825;
-}
-
-#backlight {
-    border-radius: 10px 0px 0px 10px;
+    margin-top: 1px;
+    border-radius: 15px 15px 15px 15px;
+    margin-right: 5px;
 }
 
 #tray {
-    border-radius: 10px;
+    border-radius: 15px;
     margin-right: 10px;
 }
 
 #workspaces {
     background: #000000;
-    border-radius: 10px;
-    margin-left: 10px;
-    padding-right: 0px;
-    padding-left: 5px;
+    border-radius: 15px;
+    margin-left: 5px;
+    padding-right: 2px;
 }
 
 #window {
-    border-radius: 10px;
+    border-radius: 15px;
     margin-left: 60px;
     margin-right: 60px;
 }
 
 #clock {
-    color: #fab387;
-    border-radius: 10px 10px 10px 10px;
-    margin-left: 0px;
-    border-right: 0px;
+    color: #a6e3a1;
+    border-radius: 15px 15px 15px 15px;
+    margin-left: 5px;
+    border-right: 3px;
 }
 
 #network {
     color: #f9e2af;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 15px 15px 15px 15px;
     border-left: 0px;
     border-right: 0px;
-    margin-left: 10px;
+    margin-right: 10px;
 }
+
+#custom-notifications {
+    color: #f9e2af;
+    border-radius: 15px 15px 15px 15px;
+    border-right: 0px;
+    margin-right: 5px;
+    margin-left : 5px;
+    padding-right: 0px;
+    padding-left: 2px;
+}
+
+#custom-updates {
+    color: #89b4fa;
+    border-radius: 15px 15px 15px 15px;
+    border-left: 0px;
+    border-right: 0px;
+    margin-left: 5px;
+    margin-right: 0px;
+}
+
 
 #memory {
     color: #89b4fa;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 15px 15px 15px 15px;
     border-left: 0px;
     border-right: 0px;
     margin-left: 5px;
@@ -116,7 +135,7 @@ tooltip {
 
 #disk {
     color: #a6e3a1;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 15px 15px 15px 15px;
     border-left: 0px;
     border-right: 0px;
     margin-left: 5px;
@@ -124,40 +143,42 @@ tooltip {
 
 
 #bluetooth {
-    color: #89b4fa;
-    border-radius: 10px 10px 10px 10px;
-    margin-right: 10px
+  color: #89b4fa;
+  border-radius: 15px 15px 15px 15px;
+  margin-left: 5px;
+  margin-right: 5px;
 } 
 
 #pulseaudio {
-    color: #89b4fa;
-    border-left: 0px;
-    border-right: 0px;
+  color: #89b4fa;
+  border-left: 0px;
+  border-right: 0px;
+  border-radius: 15px 0px 0px 15px;
+  margin-right: 0px;
 }
 
 #pulseaudio.microphone {
     color: #cba6f7;
     border-left: 0px;
     border-right: 0px;
-    border-radius: 0px 10px 10px 0px;
-    margin-right: 2px;
+    border-radius: 0px 15px 15px 0px;
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 #battery {
     color: #a6e3a1;
-    border-radius: 10px 10px 10px 10px;
-    margin-right: 10px;
-    border-left: 0px;
+    border-radius: 15px 15px 15px 15px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 #battery.critical:not(.charging) {
-
-background-color:           #F53C3C;
-color:                      #EEEEEE;
-animation-name:             blink;
-animation-duration:         0.5s;
-animation-timing-function:  linear;
-animation-iteration-count:  infinite;
-animation-direction:        alternate;
-
+  background-color:           #F53C3C;
+  color:                      #EEEEEE;
+  animation-name:             blink;
+  animation-duration:         0.4s;
+  animation-timing-function:  linear;
+  animation-iteration-count:  infinite;
+  animation-direction:        alternate;
 }
